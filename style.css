@@ -1,0 +1,31 @@
+body {
+    background-color: #E4F9F5;
+}
+
+.container-grid {
+    display: grid;
+    width: 100%;
+}
+
+.container-flexbox {
+    /* Flexbox Rules */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    /* Font Rules */
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-image {
+    flex-grow: 1;
+}
+
+/* Media Query to change the Layout of the Webpage when screen size varies */
+@media (max-width: 900px) {
+    /* Todo */
+}
