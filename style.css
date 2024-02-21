@@ -12,17 +12,68 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    column-gap: 50px;
 
     /* Font Rules */
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 20px;
     padding-right: 20px;
 }
 
+/* Navbar Rule to Grow and Shrink for the Image */
 .logo-image {
-    flex-grow: 1;
+    flex-grow: 1; 
+}
+
+.navbar {
+    /* Display Rules for Center Line*/
+    display: inline-block;
+    position: relative;
+    padding: 12px;
+}
+
+.navbar > a {
+    text-decoration: none;
+}
+
+.navbar:hover {
+    background-color: #30E3CA;
+}
+
+/* Main Image Rules */
+.row > img {
+    width: 100%;
+    height: 75%;
+}
+
+/* Text rules for Overlaying on the main image */
+.hero {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.salutation {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #40514E;
+}
+
+.name-card {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFF6E9;
+}
+
+.occupation-card {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #FFF6E9;
 }
 
 /* Media Query to change the Layout of the Webpage when screen size varies */
